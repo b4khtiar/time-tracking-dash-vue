@@ -18,10 +18,11 @@ onMounted(() => {
 <template>
     <div class="flex flex-col w-full bg-Dark-blue rounded-2xl">
         <div class="flex h-full lg:flex-col items-center lg:items-start gap-4 lg:gap-6 bg-Blue p-6 rounded-2xl">
-            <img class="w-16 h-16 rounded-full border-4 border-white/90" :src="user.avatar" alt="user avatar">
+            <img class="w-16 h-16 lg:w-20 lg:h-20 rounded-full border-4 border-white/90" :src="user.avatar"
+                alt="user avatar">
             <div>
                 <p class="text-white/60">Report for</p>
-                <p class="text-2xl lg:text-4xl font-light">{{ user.name }}</p>
+                <h1 class="text-2xl lg:text-4xl font-light">{{ user.name }}</h1>
             </div>
         </div>
         <div
